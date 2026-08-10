@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elimina il tuo account — Ludus</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfe;
+    --ink: #1a1d29;
+    --muted: #5a5f73;
+    --accent: #22b0ff;
+    --card: #f2f5fa;
+    --border: #e1e5ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161f;
+      --ink: #edeef4;
+      --muted: #a4a9bd;
+      --accent: #4dc4ff;
+      --card: #1c1f2b;
+      --border: #2a2e3d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 32px; }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 10px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: var(--accent);
+    color: #06202b;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Come eliminare il tuo account Ludus</h1>
+  <p class="updated">Ultimo aggiornamento: 10 agosto 2026</p>
+
+  <h2>Opzione 1 — Direttamente dall'app (immediata)</h2>
+  <div class="card">
+    <p>Se hai ancora l'app installata:</p>
+    <ol>
+      <li>Apri Ludus ed entra in <strong>Modalità genitore</strong> (PIN richiesto).</li>
+      <li>Vai in <strong>Impostazioni</strong>.</li>
+      <li>Tocca <strong>"Elimina account"</strong> (per il genitore) oppure l'icona di rimozione
+      accanto a un figlio specifico nel selettore, se vuoi eliminare solo quel figlio invece di
+      tutto l'account.</li>
+      <li>Conferma. La cancellazione è immediata.</li>
+    </ol>
+  </div>
+
+  <h2>Opzione 2 — Se non hai più accesso all'app</h2>
+  <div class="card">
+    <p>Scrivi a <strong>propinosoftware@gmail.com</strong> indicando l'indirizzo email
+    dell'account genitore da eliminare. Elaboriamo ogni richiesta manualmente entro
+    <strong>30 giorni</strong> dalla ricezione.</p>
+    <a class="btn" href="mailto:propinosoftware@gmail.com?subject=Richiesta%20cancellazione%20account%20Ludus">Scrivi per richiedere la cancellazione</a>
+  </div>
+
+  <h2>Cosa viene cancellato</h2>
+  <ul>
+    <li>L'account del genitore (autenticazione) e, se è l'unico genitore della famiglia, ogni
+    figlio associato (account, dispositivi, app monitorate, cronologia quiz/eventi, icone
+    caricate).</li>
+    <li>Se richiedi la cancellazione di un singolo figlio (non dell'intero account), vengono
+    cancellati solo i dati di quel figlio: account del suo dispositivo, app monitorate,
+    cronologia quiz/eventi.</li>
+  </ul>
+
+  <h2>Cosa resta e per quanto tempo</h2>
+  <p>Nessun dato personale viene conservato dopo una cancellazione completata, salvo eventuali
+  obblighi di legge che dovessero applicarsi in futuro (ad oggi non ne esistono per questa app).
+  Le richieste via email vengono cancellate dalla nostra casella di posta una volta evasa la
+  richiesta.</p>
+
+  <p><a href="index.html">← Torna all'informativa sulla privacy</a></p>
+
+  <footer>Ludus — Propino Software</footer>
+</div>
+</body>
+</html>
