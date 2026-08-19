@@ -44,7 +44,11 @@
   .updated {
     color: var(--muted);
     font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .nav {
     margin-bottom: 32px;
+    font-size: 0.9rem;
   }
   h2 {
     font-size: 1.2rem;
@@ -76,10 +80,11 @@
 <body>
 <div class="wrap">
   <h1>Informativa sulla privacy — Ludus</h1>
-  <p class="updated">Ultimo aggiornamento: 10 agosto 2026</p>
+  <p class="updated">Ultimo aggiornamento: 19 agosto 2026</p>
+  <p class="nav">Vedi anche i <a href="termini-di-servizio.html">Termini di Servizio</a>.</p>
 
   <div class="card">
-    <strong>Titolare del trattamento:</strong> Giuseppe Papa<br>
+    <strong>Titolare del trattamento:</strong> Papa Giuseppe<br>
     <strong>Contatto:</strong> <a href="mailto:propinosoftware@gmail.com">propinosoftware@gmail.com</a>
   </div>
 
@@ -91,8 +96,15 @@
 
   <h2>Dati che raccogliamo e perché</h2>
   <ul>
-    <li><strong>Dati dell'account genitore</strong>: email e password (o accesso anonimo per
-    l'uso in modalità singolo dispositivo), gestiti tramite Firebase Authentication (Google).</li>
+    <li><strong>Dati dell'account genitore</strong>: se il genitore collega un figlio, l'accesso
+    avviene con un vero account Google (Google Sign-In: nome, email, foto profilo dell'account
+    Google usato); per l'uso su un singolo dispositivo (nessun figlio collegato) l'app usa un
+    accesso anonimo, senza chiedere alcun dato dell'account Google. Entrambi gestiti tramite
+    Firebase Authentication.</li>
+    <li><strong>Identificativo del dispositivo</strong>: un hash (non reversibile) dell'ANDROID_ID
+    del telefono, usato solo per impedire abusi dei periodi di prova gratuita e dei crediti
+    gratuiti di Coach Ludus (es. reimpostare l'app ripetutamente per ottenere sempre nuovi
+    crediti/prova gratuita). Non identifica la persona, solo il dispositivo fisico.</li>
     <li><strong>Dati della famiglia e del dispositivo del figlio</strong>: nome scelto per il
     figlio, ciclo scolastico (elementari/medie/superiori), elenco delle app monitorate e
     relative impostazioni (limite di tempo, materia/difficoltà del quiz), stato del
@@ -110,6 +122,12 @@
     la foto vengono inviati all'API Gemini di Google per generare la risposta. Non vengono mai
     inviati il nome del figlio, i suoi voti o altri dati identificativi insieme a queste
     richieste.</li>
+    <li><strong>Dati di abbonamento e acquisti</strong>: se il genitore attiva l'abbonamento
+    Ludus o acquista un pacchetto di crediti Coach Ludus, l'acquisto avviene tramite Google Play
+    Billing. Ludus riceve e conserva solo lo stato dell'abbonamento (attivo/scaduto/in prova),
+    la data di scadenza e un identificativo tecnico dell'acquisto (usato per verificarlo presso
+    Google ed evitare acquisti duplicati) — non riceve né conserva mai dati della carta di
+    pagamento, gestiti interamente da Google Play.</li>
   </ul>
 
   <h2>Con chi condividiamo i dati</h2>
@@ -118,6 +136,9 @@
     icone delle app, funzioni cloud, notifiche push): infrastruttura di backend dell'app.</li>
     <li><strong>Google Gemini</strong>: solo per le funzioni Coach Ludus descritte sopra, solo
     quando il figlio le usa attivamente.</li>
+    <li><strong>Google Play Billing</strong>: per l'elaborazione di abbonamento e pacchetti
+    crediti, secondo le policy sulla privacy di Google Play. Ludus verifica gli acquisti tramite
+    l'API di Google Play Developer, senza mai gestire direttamente dati di pagamento.</li>
   </ul>
   <p>Non vendiamo né condividiamo dati con inserzionisti pubblicitari. Ludus non mostra
   pubblicità.</p>
@@ -146,11 +167,12 @@
     <li>Gli eventi di attività (quiz superati/falliti, blocchi) vengono conservati per un
     periodo limitato e cancellati automaticamente trascorso quel periodo.</li>
     <li>Il genitore può eliminare in ogni momento un figlio dalla famiglia o il proprio
-    account: questo cancella a cascata tutti i dati associati (account, dispositivi, app
-    monitorate, eventi, icone), come descritto nella sezione Impostazioni dell'app.</li>
+    account <strong>direttamente dall'app</strong>, dalle Impostazioni (sezione genitore) →
+    "Elimina account": questo cancella a cascata tutti i dati associati (account, dispositivi,
+    app monitorate, eventi, icone).</li>
   </ul>
-  <p>Istruzioni dettagliate su come richiedere la cancellazione (anche senza più avere accesso
-  all'app): <a href="elimina-account.html">Elimina il tuo account</a>.</p>
+  <p>Se non hai più accesso all'app, puoi richiedere la cancellazione tramite:
+  <a href="elimina-account.html">Elimina il tuo account</a>.</p>
 
   <h2>I tuoi diritti</h2>
   <p>Puoi richiedere in qualsiasi momento l'accesso, la correzione o la cancellazione dei dati
