@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Ludus</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfe;
+    --ink: #1a1d29;
+    --muted: #5a5f73;
+    --accent: #22b0ff;
+    --card: #f2f5fa;
+    --border: #e1e5ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161f;
+      --ink: #edeef4;
+      --muted: #a4a9bd;
+      --accent: #4dc4ff;
+      --card: #1c1f2b;
+      --border: #2a2e3d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .nav {
+    margin-bottom: 32px;
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 10px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Política de privacidad — Ludus</h1>
+  <p class="updated">Última actualización: 27 de agosto de 2026</p>
+  <p class="nav">Consulta también los <a href="termini-di-servizio-es.html">Términos de Servicio</a>.</p>
+
+  <div class="card">
+    <strong>Responsable del tratamiento:</strong> Papa Giuseppe<br>
+    <strong>Contacto:</strong> <a href="mailto:propinosoftware@gmail.com">propinosoftware@gmail.com</a>
+  </div>
+
+  <h2>Qué hace Ludus, en pocas palabras</h2>
+  <p>Ludus es una aplicación de control parental para Android. Ayuda a un padre o madre a
+  limitar el tiempo que un menor pasa en algunas apps de su teléfono, desbloqueándolas mediante
+  un breve quiz educativo en lugar de un bloqueo puro. Un padre o madre puede gestionar de forma
+  remota el dispositivo de su hijo si los dos dispositivos se vinculan mediante un código de
+  invitación.</p>
+
+  <h2>Datos que recopilamos y por qué</h2>
+  <ul>
+    <li><strong>Datos de la cuenta del padre o madre</strong>: si el padre o madre vincula a un
+    hijo, el acceso se realiza con una cuenta de Google real (Google Sign-In: nombre, correo
+    electrónico, foto de perfil de la cuenta de Google usada); para el uso en un solo
+    dispositivo (sin ningún hijo vinculado), la app utiliza un acceso anónimo, sin solicitar
+    ningún dato de la cuenta de Google. Ambos se gestionan mediante Firebase Authentication.</li>
+    <li><strong>Identificador del dispositivo</strong>: un hash (no reversible) del ANDROID_ID
+    del teléfono, usado solo para impedir abusos de los periodos de prueba gratuita y de los
+    créditos gratuitos de Coach Ludus (por ejemplo, restablecer la app repetidamente para
+    obtener siempre nuevos créditos/prueba gratuita). No identifica a la persona, solo el
+    dispositivo físico.</li>
+    <li><strong>Datos de la familia y del dispositivo del hijo</strong>: nombre elegido para el
+    hijo, etapa escolar (primaria/secundaria/bachillerato), lista de las apps monitoreadas y sus
+    ajustes (límite de tiempo, materia/dificultad del quiz), estado del dispositivo (batería,
+    conexión), estadísticas de los quiz superados/fallidos.</li>
+    <li><strong>Registro electrónico</strong> (función opcional): si el padre o madre la activa,
+    Ludus lee en la pantalla del dispositivo del hijo las notas y el estado de las tareas que
+    muestra la app del registro electrónico escolar ya instalada, para usarlos como condición de
+    desbloqueo adicional. Estos datos permanecen en el dispositivo y se sincronizan solo entre
+    los dispositivos de la misma familia mediante Firebase — nunca se envían a servicios de
+    inteligencia artificial.</li>
+    <li><strong>Contenidos generados con Coach Ludus</strong> (función opcional, basada en
+    inteligencia artificial): si el hijo usa la función "Coach Ludus" para generar una
+    minilección, un quiz de repaso o pedir ayuda con una foto de una tarea o de una página de un
+    libro, la materia, el tema y — solo si el hijo decide tomarla — la foto se envían a la API
+    Gemini de Google para generar la respuesta. Nunca se envían el nombre del hijo, sus notas u
+    otros datos identificativos junto con estas solicitudes.</li>
+    <li><strong>Datos de suscripción y compras</strong>: si el padre o madre activa la
+    suscripción Ludus o compra un paquete de créditos de Coach Ludus, la compra se realiza
+    mediante Google Play Billing. Ludus recibe y conserva solo el estado de la suscripción
+    (activa/caducada/en prueba), la fecha de caducidad y un identificador técnico de la compra
+    (usado para verificarla ante Google y evitar compras duplicadas) — nunca recibe ni conserva
+    datos de la tarjeta de pago, gestionados enteramente por Google Play.</li>
+    <li><strong>Ubicación del dispositivo del hijo</strong> (solo en el momento de una alerta
+    SOS, nunca en segundo plano): si el hijo usa el botón SOS para pedir ayuda, la app intenta
+    leer UNA VEZ la posición GPS del dispositivo en ese preciso instante, tras haber solicitado
+    el permiso de ubicación de Android. Si está disponible, la ubicación se incluye como enlace
+    a Google Maps en la notificación de alerta enviada al padre o madre. Ludus nunca rastrea la
+    ubicación en segundo plano ni en ningún otro momento fuera de una alerta SOS activada por el
+    propio hijo.</li>
+  </ul>
+
+  <h2>Con quién compartimos los datos</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> (autenticación, base de datos Firestore, almacenamiento
+    de los iconos de las apps, funciones en la nube, notificaciones push): infraestructura de
+    backend de la app.</li>
+    <li><strong>Google Gemini</strong>: solo para las funciones de Coach Ludus descritas
+    anteriormente, solo cuando el hijo las usa activamente.</li>
+    <li><strong>Google Play Billing</strong>: para la gestión de la suscripción y los paquetes de
+    créditos, conforme a las políticas de privacidad de Google Play. Ludus verifica las compras
+    mediante la API de Google Play Developer, sin gestionar nunca directamente datos de pago.</li>
+  </ul>
+  <p>No vendemos ni compartimos datos con anunciantes publicitarios. Ludus no muestra
+  publicidad.</p>
+
+  <h2>El permiso de Accesibilidad (Accessibility Service)</h2>
+  <p>Ludus solicita el permiso de Accesibilidad de Android con dos fines, ambos necesarios para
+  el funcionamiento básico de la app:</p>
+  <ul>
+    <li>Detectar qué app está en primer plano en el dispositivo del hijo, para aplicar los
+    límites de tiempo configurados por el padre o madre y mostrar la pantalla de bloqueo cuando
+    se acaba el tiempo.</li>
+    <li>Leer el estado de notas/tareas del registro electrónico (solo si el padre o madre activa
+    esta función opcional), para usarlo como condición de desbloqueo.</li>
+  </ul>
+  <p>Ludus no usa este permiso para leer el contenido de apps distintas de las explícitamente
+  monitoreadas por el padre o madre o del registro electrónico configurado, ni para realizar
+  acciones autónomas en nombre del usuario.</p>
+
+  <h2>Menores</h2>
+  <p>Ludus está pensada para ser configurada y gestionada por un padre, madre o tutor legal, que
+  decide conscientemente qué datos de su hijo menor se recopilan y a qué funciones (incluidas
+  las basadas en inteligencia artificial) tiene acceso el hijo.</p>
+
+  <h2>Conservación y eliminación de los datos</h2>
+  <ul>
+    <li>Los eventos de actividad (quiz superados/fallidos, bloqueos) se conservan durante un
+    periodo limitado y se eliminan automáticamente una vez transcurrido ese periodo.</li>
+    <li>El padre o madre puede eliminar en cualquier momento a un hijo de la familia o su propia
+    cuenta <strong>directamente desde la app</strong>, en Ajustes (sección de los padres) →
+    "Eliminar cuenta": esto elimina en cascada todos los datos asociados (cuenta, dispositivos,
+    apps monitoreadas, eventos, iconos).</li>
+  </ul>
+  <p>Si ya no tienes acceso a la app, puedes solicitar la eliminación a través de:
+  <a href="elimina-account-es.html">Elimina tu cuenta</a>.</p>
+
+  <h2>Tus derechos</h2>
+  <p>Puedes solicitar en cualquier momento el acceso, la corrección o la eliminación de los
+  datos que recopilamos escribiendo a
+  <a href="mailto:propinosoftware@gmail.com">propinosoftware@gmail.com</a>.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Podemos actualizar esta política con el tiempo. Los cambios relevantes se notificarán
+  dentro de la app.</p>
+
+  <footer>Ludus — Propino Software</footer>
+</div>
+</body>
+</html>
