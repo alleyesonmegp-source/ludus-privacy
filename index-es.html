@@ -80,7 +80,7 @@
 <body>
 <div class="wrap">
   <h1>Política de privacidad — Ludus</h1>
-  <p class="updated">Última actualización: 27 de agosto de 2026</p>
+  <p class="updated">Última actualización: 25 de septiembre de 2026</p>
   <p class="nav">Consulta también los <a href="termini-di-servizio-es.html">Términos de Servicio</a>.</p>
 
   <div class="card">
@@ -118,11 +118,28 @@
     los dispositivos de la misma familia mediante Firebase — nunca se envían a servicios de
     inteligencia artificial.</li>
     <li><strong>Contenidos generados con Coach Ludus</strong> (función opcional, basada en
-    inteligencia artificial): si el hijo usa la función "Coach Ludus" para generar una
-    minilección, un quiz de repaso o pedir ayuda con una foto de una tarea o de una página de un
-    libro, la materia, el tema y — solo si el hijo decide tomarla — la foto se envían a la API
-    Gemini de Google para generar la respuesta. Nunca se envían el nombre del hijo, sus notas u
-    otros datos identificativos junto con estas solicitudes.</li>
+    inteligencia artificial, utilizable solo después del consentimiento de un padre o una madre —
+    ver más abajo): si el hijo usa la función "Coach Ludus" para generar una minilección, un quiz,
+    un mapa conceptual, un ejemplo práctico o para pedir ayuda con una foto de una tarea o de una
+    página de un libro, la materia, el tema, las notas que escriba el hijo y — solo si el hijo
+    decide tomarla — la foto se envían a la API Gemini de Google para generar la respuesta. La
+    foto no se guarda: solo sirve para generar esa respuesta. Si el hijo convierte una lección en
+    vídeo, el texto de la lección también se envía a Gemini para crear la voz narradora. Nunca se
+    envían el nombre del hijo, sus notas u otros datos identificativos junto con estas
+    solicitudes. Las lecciones generadas se guardan solo en el dispositivo.</li>
+    <li><strong>Consentimiento del padre o la madre para Coach Ludus</strong>: Coach Ludus solo
+    funciona después del consentimiento explícito de un padre o una madre. La ley italiana (Ley
+    132/2025, art. 4) lo exige para los menores de 14 años; Ludus lo pide siempre, a cualquier
+    edad. Registramos si el consentimiento se dio o se retiró y cuándo (en el caso de los hijos
+    vinculados a una familia, también desde qué cuenta o dispositivo), para poder demostrarlo. El padre o la madre puede retirarlo en cualquier momento
+    desde la app y también puede desactivar solo el modo Foto.</li>
+    <li><strong>Notificaciones al padre o la madre sobre el uso de Coach Ludus</strong> (solo
+    para los hijos vinculados a una familia): el título de cada lección generada y el resultado
+    de cada quiz de Coach Ludus (respuestas correctas sobre el total); un aviso cuando se rechaza
+    una solicitud que no tiene que ver con la escuela, sin indicar nunca su contenido; un aviso
+    cuando el consentimiento a Coach Ludus se da o se retira en el teléfono del hijo. El hijo
+    recibe en la app la información de que su padre o madre recibe estas notificaciones. Las
+    notificaciones sobre lecciones y quiz se pueden desactivar.</li>
     <li><strong>Datos de suscripción y compras</strong>: si el padre o madre activa la
     suscripción Ludus o compra un paquete de créditos de Coach Ludus, la compra se realiza
     mediante Google Play Billing. Ludus recibe y conserva solo el estado de la suscripción
@@ -141,10 +158,11 @@
   <h2>Con quién compartimos los datos</h2>
   <ul>
     <li><strong>Google Firebase</strong> (autenticación, base de datos Firestore, almacenamiento
-    de los iconos de las apps, funciones en la nube, notificaciones push): infraestructura de
-    backend de la app.</li>
+    de los iconos de las apps y, durante un tiempo limitado, de las videolecciones de Coach Ludus,
+    funciones en la nube, notificaciones push): infraestructura de backend de la app.</li>
     <li><strong>Google Gemini</strong>: solo para las funciones de Coach Ludus descritas
-    anteriormente, solo cuando el hijo las usa activamente.</li>
+    anteriormente, solo cuando el hijo las usa activamente y solo después del consentimiento de
+    un padre o una madre.</li>
     <li><strong>Google Play Billing</strong>: para la gestión de la suscripción y los paquetes de
     créditos, conforme a las políticas de privacidad de Google Play. Ludus verifica las compras
     mediante la API de Google Play Developer, sin gestionar nunca directamente datos de pago.</li>
@@ -170,11 +188,23 @@
   <p>Ludus está pensada para ser configurada y gestionada por un padre, madre o tutor legal, que
   decide conscientemente qué datos de su hijo menor se recopilan y a qué funciones (incluidas
   las basadas en inteligencia artificial) tiene acceso el hijo.</p>
+  <p>Las funciones basadas en inteligencia artificial (Coach Ludus) solo pueden ser usadas por
+  el hijo después del consentimiento explícito de un padre o una madre, dado al vincular al hijo,
+  introduciendo el PIN del padre o la madre en el teléfono del hijo o desde los ajustes de la
+  app, y revocable en cualquier momento.</p>
 
   <h2>Conservación y eliminación de los datos</h2>
   <ul>
     <li>Los eventos de actividad (quiz superados/fallidos, bloqueos) se conservan durante un
     periodo limitado y se eliminan automáticamente una vez transcurrido ese periodo.</li>
+    <li>Las notificaciones enviadas al padre o la madre (incluidas las de lecciones y quiz de
+    Coach Ludus) permanecen en el centro de notificaciones de la app durante 30 días y después se
+    eliminan automáticamente.</li>
+    <li>Las videolecciones de Coach Ludus permanecen en nuestro almacenamiento en la nube solo el
+    tiempo necesario para descargarlas al dispositivo (normalmente un día, como máximo dos) y
+    después se eliminan automáticamente. Las fotos enviadas a Coach Ludus no se guardan. Las
+    lecciones guardadas y los vídeos descargados permanecen solo en el dispositivo y se eliminan
+    desde la app o desinstalándola.</li>
     <li>El padre o madre puede eliminar en cualquier momento a un hijo de la familia o su propia
     cuenta <strong>directamente desde la app</strong>, en Ajustes (sección de los padres) →
     "Eliminar cuenta": esto elimina en cascada todos los datos asociados (cuenta, dispositivos,

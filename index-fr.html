@@ -80,7 +80,7 @@
 <body>
 <div class="wrap">
   <h1>Politique de confidentialité — Ludus</h1>
-  <p class="updated">Dernière mise à jour : 27 août 2026</p>
+  <p class="updated">Dernière mise à jour : 25 septembre 2026</p>
   <p class="nav">Voir aussi les <a href="termini-di-servizio-fr.html">Conditions d'utilisation</a>.</p>
 
   <div class="card">
@@ -117,11 +117,29 @@
     et ne sont synchronisées qu'entre les appareils de la même famille via Firebase — elles ne
     sont jamais envoyées à un quelconque service d'intelligence artificielle.</li>
     <li><strong>Contenu généré avec Coach Ludus</strong> (fonctionnalité optionnelle basée sur
-    l'IA) : si l'enfant utilise la fonction « Coach Ludus » pour générer une mini-leçon, un quiz
-    d'entraînement, ou demander de l'aide avec une photo de devoirs ou d'une page de livre, la
-    matière, le sujet et — uniquement si l'enfant choisit d'en prendre une — la photo sont
-    envoyés à l'API Gemini de Google pour générer la réponse. Le nom de l'enfant, ses notes ou
-    d'autres données identifiantes ne sont jamais envoyés avec ces requêtes.</li>
+    l'IA, utilisable uniquement après le consentement d'un parent — voir ci-dessous) : si
+    l'enfant utilise la fonction « Coach Ludus » pour générer une mini-leçon, un quiz, une carte
+    conceptuelle, un exemple pratique, ou pour demander de l'aide avec une photo de devoirs ou
+    d'une page de livre, la matière, le sujet, les éventuelles remarques écrites par l'enfant et —
+    uniquement si l'enfant choisit d'en prendre une — la photo sont envoyés à l'API Gemini de
+    Google pour générer la réponse. La photo n'est pas conservée : elle sert uniquement à générer
+    cette réponse. Si l'enfant transforme une leçon en vidéo, le texte de la leçon est également
+    envoyé à Gemini pour créer la voix narrative. Le nom de l'enfant, ses notes ou d'autres
+    données identifiantes ne sont jamais envoyés avec ces requêtes. Les leçons générées restent
+    enregistrées uniquement sur l'appareil.</li>
+    <li><strong>Consentement du parent à Coach Ludus</strong> : Coach Ludus ne fonctionne
+    qu'après le consentement explicite d'un parent. La loi italienne (loi 132/2025, art. 4)
+    l'exige pour les mineurs de moins de 14 ans ; Ludus le demande toujours, à tout âge. Nous
+    enregistrons si le consentement a été donné ou retiré et quand (pour les enfants liés à une
+    famille, également depuis quel compte ou appareil), afin de pouvoir le démontrer. Le parent peut le retirer à tout moment depuis
+    l'application et peut aussi désactiver uniquement le mode Photo.</li>
+    <li><strong>Notifications au parent sur l'utilisation de Coach Ludus</strong> (uniquement
+    pour les enfants liés à une famille) : le titre de chaque leçon générée et le résultat de
+    chaque quiz Coach Ludus (bonnes réponses sur le total) ; une alerte lorsqu'une demande sans
+    rapport avec l'école est refusée, sans jamais en indiquer le contenu ; une alerte lorsque le
+    consentement à Coach Ludus est donné ou retiré sur le téléphone de l'enfant. L'enfant est
+    informé dans l'application que le parent reçoit ces notifications. Les notifications sur les
+    leçons et les quiz peuvent être désactivées.</li>
     <li><strong>Données d'abonnement et d'achat</strong> : si le parent active l'abonnement Ludus
     ou achète un pack de crédits Coach Ludus, l'achat s'effectue via Google Play Billing. Ludus
     ne reçoit et ne stocke que le statut de l'abonnement (actif/expiré/essai), la date
@@ -140,10 +158,11 @@
   <h2>Avec qui nous partageons les données</h2>
   <ul>
     <li><strong>Google Firebase</strong> (authentification, base de données Firestore, stockage
-    des icônes d'application, fonctions cloud, notifications push) : l'infrastructure backend de
-    l'application.</li>
+    des icônes d'application et, pour une durée limitée, des vidéo-leçons Coach Ludus, fonctions
+    cloud, notifications push) : l'infrastructure backend de l'application.</li>
     <li><strong>Google Gemini</strong> : uniquement pour les fonctionnalités Coach Ludus décrites
-    ci-dessus, uniquement lorsque l'enfant les utilise activement.</li>
+    ci-dessus, uniquement lorsque l'enfant les utilise activement et uniquement après le
+    consentement d'un parent.</li>
     <li><strong>Google Play Billing</strong> : pour le traitement de l'abonnement et des packs de
     crédits, conformément aux politiques de confidentialité de Google Play. Ludus vérifie les
     achats via l'API Google Play Developer, sans jamais gérer directement les données de
@@ -171,11 +190,23 @@
   <p>Ludus est conçue pour être configurée et gérée par un parent ou un tuteur légal, qui choisit
   en connaissance de cause quelles données concernant son enfant mineur sont collectées et à
   quelles fonctionnalités (y compris celles basées sur l'IA) l'enfant a accès.</p>
+  <p>Les fonctionnalités basées sur l'IA (Coach Ludus) ne peuvent être utilisées par l'enfant
+  qu'après le consentement explicite d'un parent, donné lors de l'association de l'enfant, en
+  saisissant le code PIN du parent sur le téléphone de l'enfant ou depuis les réglages de
+  l'application, et révocable à tout moment.</p>
 
   <h2>Conservation et suppression des données</h2>
   <ul>
     <li>Les événements d'activité (quiz réussis/échoués, blocages) sont conservés pendant une
     durée limitée puis automatiquement supprimés à l'expiration de cette durée.</li>
+    <li>Les notifications envoyées au parent (y compris celles sur les leçons et les quiz Coach
+    Ludus) restent dans le centre de notifications de l'application pendant 30 jours, puis sont
+    automatiquement supprimées.</li>
+    <li>Les vidéo-leçons Coach Ludus restent dans notre espace cloud uniquement le temps
+    nécessaire pour les télécharger sur l'appareil (généralement un jour, deux au maximum), puis
+    sont automatiquement supprimées. Les photos envoyées à Coach Ludus ne sont pas conservées. Les
+    leçons enregistrées et les vidéos téléchargées restent uniquement sur l'appareil et se
+    suppriment depuis l'application ou en la désinstallant.</li>
     <li>Un parent peut retirer un enfant de la famille, ou supprimer son propre compte, à tout
     moment <strong>directement depuis l'application</strong>, dans Paramètres (section parent) →
     « Supprimer le compte » : cela entraîne la suppression en cascade de toutes les données

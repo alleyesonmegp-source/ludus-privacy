@@ -80,7 +80,7 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy — Ludus</h1>
-  <p class="updated">Last updated: August 27, 2026</p>
+  <p class="updated">Last updated: September 25, 2026</p>
   <p class="nav">See also the <a href="termini-di-servizio-en.html">Terms of Service</a>.</p>
 
   <div class="card">
@@ -113,12 +113,26 @@
     already installed on the child's device, to use as an additional unlock condition. This
     data stays on the device and is only synced between devices of the same family through
     Firebase — it is never sent to any artificial intelligence service.</li>
-    <li><strong>Content generated with Coach Ludus</strong> (optional, AI-based feature): if the
-    child uses the "Coach Ludus" feature to generate a mini-lesson, a practice quiz, or ask for
-    help with a photo of homework or a book page, the subject, topic, and — only if the child
-    chooses to take one — the photo are sent to Google's Gemini API to generate the answer. The
-    child's name, grades, or other identifying data are never sent along with these
-    requests.</li>
+    <li><strong>Content generated with Coach Ludus</strong> (optional, AI-based feature,
+    available only after a parent's consent — see below): if the child uses the "Coach Ludus"
+    feature to generate a mini-lesson, a quiz, a concept map, a worked example, or to ask for help
+    with a photo of homework or a book page, the subject, topic, any notes written by the child,
+    and — only if the child chooses to take one — the photo are sent to Google's Gemini API to
+    generate the answer. The photo is not kept: it is only used to generate that answer. If the
+    child turns a lesson into a video, the lesson text is also sent to Gemini to create the
+    narrating voice. The child's name, grades, or other identifying data are never sent along
+    with these requests. Generated lessons are saved only on the device.</li>
+    <li><strong>Parental consent to Coach Ludus</strong>: Coach Ludus works only after a parent's
+    explicit consent. Italian law (Law 132/2025, art. 4) requires it for minors under 14; Ludus
+    always asks for it, at any age. We record whether consent was given or withdrawn and when (for
+    children linked to a family, also from which account or device), so that it can be demonstrated. The parent can withdraw it at
+    any time from the app and can also turn off Photo mode alone.</li>
+    <li><strong>Notifications to the parent about Coach Ludus use</strong> (only for children
+    linked to a family): the title of every lesson generated and the result of every Coach Ludus
+    quiz (correct answers out of the total); an alert when a request unrelated to school is
+    blocked, without ever reporting its content; an alert when consent to Coach Ludus is given or
+    withdrawn on the child's phone. The child is told in the app that the parent receives these
+    notifications. Lesson and quiz notifications can be turned off.</li>
     <li><strong>Subscription and purchase data</strong>: if the parent activates the Ludus
     subscription or buys a Coach Ludus credit package, the purchase happens through Google Play
     Billing. Ludus only receives and stores the subscription status (active/expired/trial), the
@@ -135,10 +149,11 @@
 
   <h2>Who we share data with</h2>
   <ul>
-    <li><strong>Google Firebase</strong> (authentication, Firestore database, app icon storage,
-    cloud functions, push notifications): the app's backend infrastructure.</li>
+    <li><strong>Google Firebase</strong> (authentication, Firestore database, storage of app
+    icons and, for a limited time, of Coach Ludus video lessons, cloud functions, push
+    notifications): the app's backend infrastructure.</li>
     <li><strong>Google Gemini</strong>: only for the Coach Ludus features described above, only
-    when the child actively uses them.</li>
+    when the child actively uses them, and only after a parent's consent.</li>
     <li><strong>Google Play Billing</strong>: for processing the subscription and credit
     packages, according to Google Play's privacy policies. Ludus verifies purchases through the
     Google Play Developer API, without ever directly handling payment data.</li>
@@ -162,11 +177,21 @@
   <p>Ludus is designed to be set up and managed by a parent or legal guardian, who knowingly
   chooses which data about their minor child is collected and which features (including
   AI-based ones) the child has access to.</p>
+  <p>AI-based features (Coach Ludus) can be used by the child only after a parent's explicit
+  consent, given while linking the child, by entering the parent's PIN on the child's phone, or
+  from the app's settings, and it can be withdrawn at any time.</p>
 
   <h2>Data retention and deletion</h2>
   <ul>
     <li>Activity events (quizzes passed/failed, blocks) are kept for a limited period and
     automatically deleted after that period.</li>
+    <li>Notifications sent to the parent (including those about Coach Ludus lessons and
+    quizzes) stay in the app's notification center for 30 days and are then deleted
+    automatically.</li>
+    <li>Coach Ludus video lessons stay in our cloud storage only for the time needed to download
+    them to the device (usually one day, at most two) and are then deleted automatically. Photos
+    sent to Coach Ludus are not kept. Saved lessons and downloaded videos stay only on the device
+    and are deleted from the app or by uninstalling it.</li>
     <li>A parent can remove a child from the family, or delete their own account, at any time
     <strong>directly from the app</strong>, from Settings (parent section) → "Delete account":
     this cascades to delete all associated data (account, devices, monitored apps, events,

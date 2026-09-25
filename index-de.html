@@ -80,7 +80,7 @@
 <body>
 <div class="wrap">
   <h1>Datenschutzerklärung — Ludus</h1>
-  <p class="updated">Zuletzt aktualisiert: 27. August 2026</p>
+  <p class="updated">Zuletzt aktualisiert: 25. September 2026</p>
   <p class="nav">Siehe auch die <a href="termini-di-servizio-de.html">Nutzungsbedingungen</a>.</p>
 
   <div class="card">
@@ -117,12 +117,32 @@
     Freischaltbedingung zu verwenden. Diese Daten bleiben auf dem Gerät und werden nur zwischen
     Geräten derselben Familie über Firebase synchronisiert — sie werden niemals an einen
     KI-Dienst gesendet.</li>
-    <li><strong>Mit Coach Ludus erzeugte Inhalte</strong> (optionale, KI-basierte Funktion): Wenn
-    das Kind die Funktion „Coach Ludus" nutzt, um eine Mini-Lektion oder ein Übungsquiz zu
+    <li><strong>Mit Coach Ludus erzeugte Inhalte</strong> (optionale, KI-basierte Funktion, nur
+    nach Zustimmung eines Elternteils nutzbar — siehe unten): Wenn das Kind die Funktion „Coach
+    Ludus“ nutzt, um eine Mini-Lektion, ein Quiz, eine Konzeptkarte oder eine Beispielaufgabe zu
     erstellen oder um Hilfe mit einem Foto von Hausaufgaben oder einer Buchseite zu bitten, werden
-    das Fach, das Thema und — nur wenn das Kind sich dafür entscheidet — das Foto an die
-    Gemini-API von Google gesendet, um die Antwort zu erzeugen. Der Name des Kindes, seine Noten
-    oder andere identifizierende Daten werden diesen Anfragen niemals beigefügt.</li>
+    das Fach, das Thema, etwaige Notizen des Kindes und — nur wenn das Kind sich dafür entscheidet
+    — das Foto an die Gemini-API von Google gesendet, um die Antwort zu erzeugen. Das Foto wird
+    nicht gespeichert: Es dient nur dazu, diese Antwort zu erzeugen. Wandelt das Kind eine Lektion
+    in ein Video um, wird der Text der Lektion zusätzlich an Gemini gesendet, um die
+    Erzählerstimme zu erzeugen. Der Name des Kindes, seine Noten oder andere identifizierende
+    Daten werden diesen Anfragen niemals beigefügt. Erzeugte Lektionen werden nur auf dem Gerät
+    gespeichert.</li>
+    <li><strong>Zustimmung eines Elternteils zu Coach Ludus</strong>: Coach Ludus funktioniert
+    nur nach ausdrücklicher Zustimmung eines Elternteils. Das italienische Recht (Gesetz 132/2025,
+    Art. 4) verlangt sie für Minderjährige unter 14 Jahren; Ludus fragt immer danach, in jedem
+    Alter. Wir speichern, ob die Zustimmung erteilt oder widerrufen wurde und wann (bei Kindern, die
+    mit einer Familie verbunden sind, auch von welchem Konto oder Gerät), um sie nachweisen zu
+    können. Der Elternteil kann sie jederzeit in der App
+    widerrufen und auch nur den Foto-Modus ausschalten.</li>
+    <li><strong>Benachrichtigungen an den Elternteil über die Nutzung von Coach Ludus</strong>
+    (nur für Kinder, die mit einer Familie verbunden sind): der Titel jeder erstellten Lektion und
+    das Ergebnis jedes Coach-Ludus-Quiz (richtige Antworten von der Gesamtzahl); eine Warnung,
+    wenn eine Anfrage ohne Schulbezug blockiert wird, ohne jemals ihren Inhalt anzugeben; eine
+    Warnung, wenn die Zustimmung zu Coach Ludus auf dem Handy des Kindes erteilt oder widerrufen
+    wird. Das Kind wird in der App darüber informiert, dass der Elternteil diese
+    Benachrichtigungen erhält. Die Benachrichtigungen zu Lektionen und Quiz lassen sich
+    ausschalten.</li>
     <li><strong>Abonnement- und Kaufdaten</strong>: Wenn der Elternteil das Ludus-Abonnement
     aktiviert oder ein Coach-Ludus-Guthabenpaket kauft, erfolgt der Kauf über Google Play
     Billing. Ludus erhält und speichert nur den Abonnementstatus (aktiv/abgelaufen/Testphase),
@@ -141,10 +161,10 @@
   <h2>Mit wem wir Daten teilen</h2>
   <ul>
     <li><strong>Google Firebase</strong> (Authentifizierung, Firestore-Datenbank, Speicherung von
-    App-Symbolen, Cloud-Funktionen, Push-Benachrichtigungen): die Backend-Infrastruktur der
-    App.</li>
+    App-Symbolen und, für begrenzte Zeit, von Coach-Ludus-Videolektionen, Cloud-Funktionen,
+    Push-Benachrichtigungen): die Backend-Infrastruktur der App.</li>
     <li><strong>Google Gemini</strong>: nur für die oben beschriebenen Coach-Ludus-Funktionen,
-    nur wenn das Kind sie aktiv nutzt.</li>
+    nur wenn das Kind sie aktiv nutzt, und nur nach Zustimmung eines Elternteils.</li>
     <li><strong>Google Play Billing</strong>: zur Abwicklung des Abonnements und der
     Guthabenpakete gemäß den Datenschutzrichtlinien von Google Play. Ludus überprüft Käufe über
     die Google Play Developer API, ohne jemals direkt Zahlungsdaten zu verarbeiten.</li>
@@ -172,11 +192,23 @@
   eingerichtet und verwaltet wird, der bewusst entscheidet, welche Daten über sein minderjähriges
   Kind erhoben werden und auf welche Funktionen (einschließlich KI-basierter) das Kind Zugriff
   hat.</p>
+  <p>KI-basierte Funktionen (Coach Ludus) kann das Kind nur nach ausdrücklicher Zustimmung eines
+  Elternteils nutzen, die beim Verbinden des Kindes, durch Eingabe der PIN des Elternteils auf dem
+  Handy des Kindes oder in den Einstellungen der App erteilt wird und jederzeit widerrufen werden
+  kann.</p>
 
   <h2>Aufbewahrung und Löschung von Daten</h2>
   <ul>
     <li>Aktivitätsereignisse (bestandene/nicht bestandene Quiz, Sperrungen) werden für einen
     begrenzten Zeitraum aufbewahrt und danach automatisch gelöscht.</li>
+    <li>Benachrichtigungen an den Elternteil (auch zu Lektionen und Quiz von Coach Ludus)
+    bleiben 30 Tage in der Benachrichtigungszentrale der App und werden danach automatisch
+    gelöscht.</li>
+    <li>Coach-Ludus-Videolektionen bleiben nur so lange in unserem Cloud-Speicher, wie es nötig
+    ist, um sie auf das Gerät herunterzuladen (normalerweise einen Tag, höchstens zwei), und werden
+    danach automatisch gelöscht. An Coach Ludus gesendete Fotos werden nicht gespeichert.
+    Gespeicherte Lektionen und heruntergeladene Videos bleiben nur auf dem Gerät und werden in der
+    App oder durch Deinstallieren gelöscht.</li>
     <li>Ein Elternteil kann ein Kind jederzeit aus der Familie entfernen oder das eigene Konto
     löschen, <strong>direkt in der App</strong>, unter Einstellungen (Elternbereich) → „Konto
     löschen": Dies löscht kaskadenartig alle zugehörigen Daten (Konto, Geräte, überwachte Apps,
