@@ -80,7 +80,7 @@
 <body>
 <div class="wrap">
   <h1>Política de privacidad — Ludus</h1>
-  <p class="updated">Última actualización: 27 de septiembre de 2026</p>
+  <p class="updated">Última actualización: DATA_PASSAGGIO_ES</p>
   <p class="nav">Consulta también los <a href="termini-di-servizio-es.html">Términos de Servicio</a>.</p>
 
   <div class="card">
@@ -122,9 +122,16 @@
     ver más abajo): si el hijo usa la función "Coach Ludus" para generar una minilección, un quiz,
     un mapa conceptual, un ejemplo práctico o para pedir ayuda con una foto de una tarea o de una
     página de un libro, la materia, el tema, las notas que escriba el hijo y — solo si el hijo
-    decide tomarla — la foto se envían a la API Gemini de Google para generar la respuesta. La
-    foto no se guarda: solo sirve para generar esa respuesta. Si el hijo convierte una lección en
-    vídeo, el texto de la lección también se envía a Gemini para crear la voz narradora. Nunca se
+    decide tomarla — la foto se envían a Scaleway, que ejecuta el modelo de inteligencia artificial en un centro
+    de datos en París (Francia), para generar la respuesta. Scaleway no conserva el contenido de
+    las solicitudes, no lo pone a disposición de quienes crearon el modelo y no lo usa para
+    entrenar modelos; solo en caso de errores técnicos poco frecuentes puede conservarlo como
+    máximo 2 semanas, para localizar y corregir el problema. La foto no se guarda: solo sirve para
+    generar esa respuesta. Los textos escritos por Coach Ludus (nunca los escritos por el hijo)
+    también se envían a OpenAI, para comprobar que son adecuados para un joven y, si el hijo
+    convierte una lección en vídeo, para crear la voz narradora, indicada en el vídeo como
+    generada por inteligencia artificial. OpenAI no usa estos textos para entrenar sus modelos y
+    los conserva como máximo 30 días para la detección de abusos. Nunca se
     envían el nombre del hijo, sus notas u otros datos identificativos junto con estas
     solicitudes. Las lecciones generadas se guardan solo en el dispositivo.</li>
     <li><strong>Consentimiento del padre o la madre para Coach Ludus</strong>: Coach Ludus solo
@@ -132,7 +139,8 @@
     132/2025, art. 4) lo exige para los menores de 14 años; Ludus lo pide siempre, a cualquier
     edad. Registramos si el consentimiento se dio o se retiró y cuándo (en el caso de los hijos
     vinculados a una familia, también desde qué cuenta o dispositivo), para poder demostrarlo. El padre o la madre puede retirarlo en cualquier momento
-    desde la app y también puede desactivar solo el modo Foto.</li>
+    desde la app y también puede desactivar solo el modo Foto. Si cambian los proveedores de inteligencia
+    artificial, pedimos de nuevo el consentimiento.</li>
     <li><strong>Notificaciones al padre o la madre sobre el uso de Coach Ludus</strong> (solo
     para los hijos vinculados a una familia): el título de cada lección generada y el resultado
     de cada quiz de Coach Ludus (respuestas correctas sobre el total); un aviso cuando se rechaza
@@ -169,9 +177,13 @@
     <li><strong>Google Firebase</strong> (autenticación, base de datos Firestore, almacenamiento
     de los iconos de las apps y, durante un tiempo limitado, de las videolecciones de Coach Ludus,
     funciones en la nube, notificaciones push): infraestructura de backend de la app.</li>
-    <li><strong>Google Gemini</strong>: solo para las funciones de Coach Ludus descritas
-    anteriormente, solo cuando el hijo las usa activamente y solo después del consentimiento de
-    un padre o una madre.</li>
+    <li><strong>Scaleway</strong> (París, Francia): ejecuta el modelo de inteligencia artificial
+    de Coach Ludus, solo cuando el hijo usa activamente las funciones descritas anteriormente y
+    solo después del consentimiento de un padre o una madre.</li>
+    <li><strong>OpenAI</strong> (OpenAI Ireland Ltd): recibe solo los textos escritos por Coach
+    Ludus, para comprobarlos y crear la voz de las videolecciones. Las posibles transferencias
+    fuera del Espacio Económico Europeo se realizan con las cláusulas contractuales tipo aprobadas
+    por la Comisión Europea.</li>
     <li><strong>Google Play Billing</strong>: para la gestión de la suscripción y los paquetes de
     créditos, conforme a las políticas de privacidad de Google Play. Ludus verifica las compras
     mediante la API de Google Play Developer, sin gestionar nunca directamente datos de pago.</li>
