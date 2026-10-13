@@ -80,7 +80,7 @@
 <body>
 <div class="wrap">
   <h1>Informativa sulla privacy — Ludus</h1>
-  <p class="updated">Ultimo aggiornamento: 28 settembre 2026</p>
+  <p class="updated">Ultimo aggiornamento: 13 ottobre 2026</p>
   <p class="nav">Vedi anche i <a href="termini-di-servizio.html">Termini di Servizio</a>.</p>
 
   <div class="card">
@@ -120,16 +120,26 @@
     se il figlio usa la funzione "Coach Ludus" per generare una mini-lezione, un quiz, una mappa
     concettuale, un esempio pratico o per chiedere aiuto su una foto di un compito o di una
     pagina di libro, la materia, l'argomento, le eventuali note scritte dal figlio e — solo se il
-    figlio sceglie di scattarla — la foto vengono inviati a Scaleway, che esegue il modello di intelligenza artificiale in un
-    data center a Parigi (Francia), per generare la risposta. Scaleway non conserva il contenuto
-    delle richieste, non lo rende accessibile a chi ha creato il modello e non lo usa per
-    addestrare modelli; solo in caso di rari errori tecnici può conservarlo per al massimo 2
-    settimane, per individuare e correggere il problema. La foto non viene conservata: serve solo
-    a generare quella risposta. I testi scritti da Coach Ludus (mai quelli scritti dal figlio)
-    vengono inviati anche a OpenAI, per controllare che siano adatti a un ragazzo e, se il figlio
-    trasforma una lezione in video, per creare la voce narrante, indicata nel video come generata
-    dall'intelligenza artificiale. OpenAI non usa questi testi per addestrare i suoi modelli e li
-    conserva al massimo 30 giorni per il controllo degli abusi. Non vengono mai inviati il nome del figlio, i suoi voti o altri
+    figlio sceglie di scattarla — la foto vengono inviati a Scaleway, che esegue un modello di
+    intelligenza artificiale in un data center a Parigi (Francia). Questo modello controlla che la
+    richiesta riguardi la scuola, toglie i dati personali (per esempio nomi, scuola, classe,
+    contatti, età) e prepara una scheda con l'argomento da spiegare, senza i numeri degli esercizi
+    assegnati. Scaleway non conserva il contenuto delle richieste, non lo rende accessibile a chi
+    ha creato il modello e non lo usa per addestrare modelli; solo in caso di rari errori tecnici
+    può conservarlo per al massimo 2 settimane, per individuare e correggere il problema. La foto
+    non viene conservata: serve solo a preparare quella scheda. I contenuti di Coach Ludus
+    (lezioni, quiz, mappe, esempi) li scrive poi OpenAI, partendo solo dalla scheda senza dati
+    personali e dai testi già scritti da Coach Ludus: a OpenAI non arrivano mai le parole o le
+    foto del figlio così come sono. OpenAI riceve i testi scritti da Coach Ludus anche per
+    controllare che siano adatti a un ragazzo e, se il figlio trasforma una lezione in video, per
+    creare la voce narrante, indicata nel video come generata dall'intelligenza artificiale. OpenAI
+    non usa questi dati per addestrare i suoi modelli e li conserva al massimo 30 giorni per il
+    controllo degli abusi. Le mappe concettuali e gli approfondimenti scritti da OpenAI vengono poi
+    riletti da Anthropic (modello Claude), che cerca eventuali errori di fatto prima che il figlio
+    li legga: Anthropic riceve solo i testi scritti da Coach Ludus, mai le parole, le foto o i dati
+    del figlio, non li usa per addestrare i suoi modelli e li cancella di norma entro 30 giorni
+    (più a lungo solo se segnalati dai suoi sistemi di sicurezza come possibile abuso). Non vengono
+    mai inviati il nome del figlio, i suoi voti o altri
     dati identificativi insieme a queste richieste. Le lezioni generate restano salvate solo sul
     dispositivo.</li>
     <li><strong>Consenso del genitore a Coach Ludus</strong>: Coach Ludus funziona solo dopo il
@@ -138,8 +148,8 @@
     è stato dato o tolto e quando (per i figli collegati a una famiglia anche da quale account o
     dispositivo), per poterlo dimostrare. Il
     genitore può toglierlo in qualsiasi momento dall'app e può anche disattivare la sola
-    modalità Foto. Se cambiano i fornitori di intelligenza artificiale, chiediamo di nuovo il
-    consenso.</li>
+    modalità Foto. Se cambiano i fornitori di intelligenza artificiale o il modo in cui li usiamo,
+    chiediamo di nuovo il consenso.</li>
     <li><strong>Notifiche al genitore sull'uso di Coach Ludus</strong> (solo per i figli
     collegati a una famiglia): il titolo di ogni lezione generata e il risultato di ogni quiz di
     Coach Ludus (risposte giuste sul totale); un avviso quando una richiesta non scolastica viene
@@ -176,12 +186,19 @@
     icone delle app e, per un tempo limitato, delle video-lezioni di Coach Ludus, funzioni
     cloud, notifiche push): infrastruttura di backend dell'app.</li>
     <li><strong>Scaleway</strong> (Parigi, Francia): esegue il modello di intelligenza artificiale
-    di Coach Ludus, solo quando il figlio usa attivamente le funzioni descritte sopra e solo dopo
-    il consenso di un genitore.</li>
-    <li><strong>OpenAI</strong> (OpenAI Ireland Ltd): riceve solo i testi scritti da Coach Ludus,
-    per controllarli e creare la voce delle video-lezioni. Eventuali trasferimenti fuori dallo
+    che legge le richieste del figlio a Coach Ludus e prepara la scheda senza dati personali, solo
+    quando il figlio usa attivamente le funzioni descritte sopra e solo dopo il consenso di un
+    genitore.</li>
+    <li><strong>OpenAI</strong> (OpenAI Ireland Ltd): scrive i contenuti di Coach Ludus partendo
+    dalla scheda senza dati personali, li controlla e crea la voce delle video-lezioni; riceve solo
+    la scheda e i testi scritti da Coach Ludus. Eventuali trasferimenti fuori dallo
     Spazio economico europeo avvengono con le clausole contrattuali standard approvate dalla
     Commissione europea.</li>
+    <li><strong>Anthropic</strong> (Anthropic Ireland, Limited): rilegge le mappe concettuali e
+    gli approfondimenti scritti da Coach Ludus per trovare errori di fatto prima che il figlio li
+    legga; riceve solo testi scritti da Coach Ludus, mai dati del figlio. Eventuali trasferimenti
+    fuori dallo Spazio economico europeo avvengono con le clausole contrattuali standard approvate
+    dalla Commissione europea.</li>
     <li><strong>Google Play Billing</strong>: per l'elaborazione di abbonamento e pacchetti
     crediti, secondo le policy sulla privacy di Google Play. Ludus verifica gli acquisti tramite
     l'API di Google Play Developer, senza mai gestire direttamente dati di pagamento.</li>
